@@ -1,0 +1,242 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>网络安全大作业 | YulongZのBlog</title><meta name="keywords" content="网络安全"><meta name="author" content="YulongZ"><meta name="copyright" content="YulongZ"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一、简答题（共18分）（共6个小题，任选三个做） 1、简述什么是网络安全的最终目标。（6分） 网络安全的最终目标是保证信息的保密性、完整性、可用性。 2、简述缓冲区溢出的防范方法。（6分） 缓冲区溢出攻击占了远程网络攻击的绝大多数，这种攻击可以使得一个匿名的Internet用户有机会获得一台主机的部分或全部的控制权。如果能有效地消除缓冲区溢出的漏洞，则很大一部分的安全威胁可以得到缓解。 目前有三种">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网络安全大作业">
+<meta property="og:url" content="http://zhengyulong.top/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/index.html">
+<meta property="og:site_name" content="YulongZのBlog">
+<meta property="og:description" content="一、简答题（共18分）（共6个小题，任选三个做） 1、简述什么是网络安全的最终目标。（6分） 网络安全的最终目标是保证信息的保密性、完整性、可用性。 2、简述缓冲区溢出的防范方法。（6分） 缓冲区溢出攻击占了远程网络攻击的绝大多数，这种攻击可以使得一个匿名的Internet用户有机会获得一台主机的部分或全部的控制权。如果能有效地消除缓冲区溢出的漏洞，则很大一部分的安全威胁可以得到缓解。 目前有三种">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png">
+<meta property="article:published_time" content="2021-07-07T10:16:54.000Z">
+<meta property="article:modified_time" content="2022-09-11T08:32:44.055Z">
+<meta property="article:author" content="YulongZ">
+<meta property="article:tag" content="网络安全">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://zhengyulong.top/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-09-11 16:32:44'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://i.loli.net/2021/04/02/X3fLzoVn9gPiBMr.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home faa-float animated"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive faa-float animated"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags faa-float animated"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open faa-float animated"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music faa-float animated"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images faa-float animated"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-float animated"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book faa-float animated"></i><span> 书单</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad faa-float animated"></i><span> 游戏</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-comments faa-float animated"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link faa-float animated"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart faa-float animated"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">YulongZのBlog</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home faa-float animated"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive faa-float animated"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags faa-float animated"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open faa-float animated"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fa fa-heartbeat"></i><span> 生活</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music faa-float animated"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/Gallery/"><i class="fa-fw fas fa-images faa-float animated"></i><span> 照片</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video faa-float animated"></i><span> 电影</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fas fa-book faa-float animated"></i><span> 书单</span></a></li><li><a class="site-page child" href="/games/"><i class="fa-fw fas fa-gamepad faa-float animated"></i><span> 游戏</span></a></li><li><a class="site-page child" href="/shuoshuo/"><i class="fa-fw fas fa-comments faa-float animated"></i><span> 说说</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link faa-float animated"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart faa-float animated"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">网络安全大作业</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-07-07T10:16:54.000Z" title="发表于 2021-07-07 18:16:54">2021-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-09-11T08:32:44.055Z" title="更新于 2022-09-11 16:32:44">2022-09-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AF%BE%E4%B8%9A/">课业</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="网络安全大作业"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>一、简答题（共18分）（共6个小题，任选三个做）</strong></p>
+<p><em><strong>1、简述什么是网络安全的最终目标。（6分）</strong></em></p>
+<p>网络安全的最终目标是保证信息的保密性、完整性、可用性。</p>
+<p><em><strong>2、简述缓冲区溢出的防范方法。（6分）</strong></em></p>
+<p>缓冲区溢出攻击占了远程网络攻击的绝大多数，这种攻击可以使得一个匿名的Internet用户有机会获得一台主机的部分或全部的控制权。如果能有效地消除缓冲区溢出的漏洞，则很大一部分的安全威胁可以得到缓解。 目前有三种基本的方法保护缓冲区免受缓冲区溢出的攻击和影响： 1、通过操作系统使得缓冲区不可执行，从而阻止攻击者植入攻击代码； 2、强制写正确的代码的方法； 3、利用编译器的边界检查来实现缓冲区的保护，使得缓冲区溢出不可能出现，从而完全消除了缓冲区溢出的威胁。</p>
+<p><em><strong>3、试述Web应用程序分为哪三层？三层结构各起什么作用？这种结构有什么好处？（6分）</strong></em></p>
+<p>分为表示客户浏览器（表示层）/Web服务器（应用层）/数据库（Browser/Server/Database）。作用：在表示层客户通过Web浏览器向中间Web应用服务器发出HTTP请求，Web应用服务器通过对客户端的请求进行身份验证然后对于合法的用户请求进行处理并与数据库进行连接进而获取或保存数据并将从数据库获得的数据返回客户端浏览器。好处：在这种结构下，用户工作界面通过WWW浏览器来实现，极少部分事务逻辑在前端浏览器实现，主要事务逻辑在服务器端实现，大大简化了客户端电脑载荷，减轻了系统维护成本和工作量。</p>
+<p><em><strong>4、什么是堆栈保护，堆栈保护的原理是什么？（6分）</strong></em></p>
+<p>堆栈保护是一种提供程序指针完整性检查的编译器技术。通过检查函数活动记录中的返回地址来实现。堆栈保护作为gcc的一个小的补丁，在每个函数中，加入了函数建立和销毁的代码。加入的函数建立代码实际上在堆栈中函数返回地址前面加了一些附加的字节。而在返回函数时，首先检查这个附加的字节是否被改动过，如果发生过缓冲区溢出的攻击，那么这种攻击很容易在函数返回前被检测到。</p>
+<p><em><strong>5、什么是CGI技术？使用GCI的原因是什么？CGI的常用步骤是什么？（6分）</strong></em></p>
+<p>CGI是Commom Gateway Interface的缩写，是用于连接主页和应用程序的接口。使用CGI的原因在于它是一个定义良好并被广泛支持的标准，没有CGI就不可能实现动态的Web页面，除非使用一些服务器中提供的特殊方法（如今，也有除CGI之外的其他技术逐渐在成为标准）。CGI的处理通常包括四步：</p>
+<p>（1） 通过Internet把用户请求送到服务器。</p>
+<p>（2） 服务器接收用户请求并交给CGI程序处理。</p>
+<p>（3） CGI程序把处理结构传送给服务器。</p>
+<p>（4） 服务器把结果送回到用户。</p>
+<p><em><strong>6、Iptable作为Linux平台下的包过滤防火墙包含三要素是什么，试述三要素的各自内涵。（6分）</strong></em></p>
+<p>三要素：防火墙的基本功能；企业的特殊要求；与用户网络相结合。</p>
+<p>内涵：防火墙系统可以说是网络的第一道防线，因此一个企业在决定使用防火墙保护内部网络的安全时，它首先需要了解一个防火墙系统应具备的基本功能，这是用户选择防火墙产品的依据和前提；企业安全政策中往往有些特殊需求不是每一个防火墙都会提供的，这方面常会成为选择防火墙的考虑因素之一，大部分防火墙都可以与防病毒软件搭配实现扫毒功能，有的防火墙则可以直接集成扫毒功能，差别只是扫毒工作是由防火墙完成，或是由另一台专用的计算机完成；好的防火墙还应该向使用者提供完整的安全检查功能，但是一个安全的网络仍必须依靠使用者的观察及改进，因为防火墙并不能有效地杜绝所有的恶意封包，企业想要达到真正的安全仍然需要内部人员不断记录、改进、追踪。防火墙可以限制唯有合法的使用者才能进行连接，但是否存在利用合法掩护非法的情形仍需依靠管理者来发现。</p>
+<p><strong>二、实践题（共58分）（此题要求对关键实验步骤截图并予以针对性说明）</strong></p>
+<p><em><strong>1、什么是ARP高速缓存表？一个刚进入网络的主机ARP缓存表是如何更新的？查看自己计算机的ARP缓存表并截图。（8分）</strong></em></p>
+<p>ARP是一种将IP地址转化成物理MAC地址的协议，通过查找ARP缓存表来实现转化。在每张ARP高速缓存表中，都包含了所在局域网上的各主机和路由器的IP地址到硬件地址的映射。ARP缓存表具有动态更新的特性，随着计算机不断发出ARP请求和收到的ARP响应而不断更新。</p>
+<p> <img src="https://i.loli.net/2021/07/07/R9oHFUAek2uCQ1p.png" alt="image-20210707182130959"></p>
+<p><strong>使用arp -a命令查看本机arp表</strong></p>
+<p><em><strong>2、使用ping命令发送指定数量的Echo报文。（6分）</strong></em></p>
+<p><img src="https://i.loli.net/2021/07/07/6yMcNmJeEln1iVF.png" alt="image-20210707182149825"> </p>
+<p><strong>使用ping -n count 要发送的回显请求数，此处设置为9</strong></p>
+<p><em><strong>3、采用nmap测试目标主机的系统类型。使用nmap对目标主机的445号端口进行全连接扫描,并列出扫描过程的详细信息。（说明实验步骤并截图标，在图中标出实验结果）（12分）</strong></em></p>
+<p>1.使用nmap -O 测试目标主机的系统类型</p>
+<p> <img src="https://i.loli.net/2021/07/07/sAVaSqZW1CB5mTi.png" alt="image-20210707182237504"></p>
+<p><strong>得到了目标主机的系统为windows系列</strong></p>
+<p>2.使用nmap -sT进行TCP connect()端口扫描，并指定端口为445</p>
+<p><img src="https://i.loli.net/2021/07/07/AW9cOiT1JS8Gpr5.png" alt="image-20210707192436224"> </p>
+<p><strong>445端口filtered：端口被防火墙IDS/IPS屏蔽，无法确定其状态。</strong></p>
+<p><em><strong>4、使用站长之家（<a target="_blank" rel="noopener" href="http://whois.chainaz.com)/">http://whois.chainaz.com）</a> 对新浪，百度等（或自选域名）域名进行DNS Whois查询，再根据查询到的注册人、注册人邮箱和注册人手机电话等信息进行whois反查；使用全球Whois查询（<a target="_blank" rel="noopener" href="http://www.whois365.com/cn%EF%BC%89">http://www.whois365.com/cn）</a> 对某大学（自选）主页进行IP Whois查询，然后使用站长之家（<a target="_blank" rel="noopener" href="http://whois.chinaz.com)提供的ip反查域名信息功能对域名信息进行反查(10分)/">http://whois.chinaz.com）提供的IP反查域名信息功能对域名信息进行反查（10分）</a></strong></em></p>
+<p><img src="https://i.loli.net/2021/07/07/EoARBIzQ98xda3y.png" alt="image-20210707192746215"> </p>
+<p><strong>在站长之家对域名zhengyulong.top进行whois查询</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/iP3YW1cDFwXEqJs.png" alt="image-20210707192825216"> </p>
+<p><strong>根据查询到的注册人电话进行电话反查</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/2omOzf3AVts8Ckh.png" alt="image-20210707192856840"> </p>
+<p><strong>对东秦主页进行进行IP Whois查询</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/T1If9uV4v5Yxr8z.png" alt="image-20210707192916377"> </p>
+<p><strong>使用查到的IP在站长之家IP反查</strong></p>
+<p><em><strong>5、在Windows操作系统下cain或Linux操作系统下的ether app等工具实现ARP欺骗攻击。（8分）</strong></em></p>
+<p><img src="https://i.loli.net/2021/07/07/z2hDfoSquHMvrpi.png" alt="image-20210707193024604"> </p>
+<p><strong>在ettercap中选择Ubuntu为目标1，网关作为目标2</strong></p>
+<p> <img src="https://i.loli.net/2021/07/07/6qP4BLeMXdKsI2H.png" alt="image-20210707193101878"></p>
+<p><strong>可以看到在Ubuntu虚拟机中的ARP缓冲表里，网关的MAC地址就变成了bt5虚拟机的MAC地址。ARP欺骗成功</strong></p>
+<p><em><strong>6、使用hping3发起SYN flooding 攻击，使用wireshark的流向图功能来分析SYN flooding攻击。（8分）</strong></em></p>
+<p><img src="https://i.loli.net/2021/07/07/hcvBmZFMYtdRTzH.png" alt="image-20210707193323171"> </p>
+<p><strong>观察可以发现，源地址已经被伪装成了19.16.1.1，其bt5攻击端的IP192.168.47.129被隐藏了起来，被攻击端Ubuntu的IP为192.168.47.128，从时间和包的序号上来看，可以看出基本上是按照设定的1000微秒也就是每1ms发送1个SYN包，初步判断攻击成功。也可以看到端口为80，也是命令行中设置的端口。</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/iMfS7beABd2zlL5.png" alt="image-20210707193337370"> </p>
+<p><strong>流量类型选择TCP，从图中可以看到有伪造的IP地址19.16.1.1向被攻击端192.168.47.128发送了大量的TCP SYN报文</strong></p>
+<p><em><strong>7、在metasploit framework平台上进行ms08-067漏洞溢出攻击实验，或进行其他类似漏洞攻击实验。（6分）</strong></em></p>
+<p><img src="https://i.loli.net/2021/07/07/rbIsSuNa8yifBvW.png" alt="image-20210707193400226"> </p>
+<p><strong>使用ms08_067漏洞攻击程序</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/5rCBx8oihjJ4Ozu.png" alt="image-20210707193437768"> </p>
+<p><strong>完成渗透攻击模块与攻击载荷模块的选择</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/IaJmfq7oW4An6hy.png" alt="image-20210707193501651"> </p>
+<p><strong>攻击机配置和目标机配置</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png" alt="image-20210707193513380"> </p>
+<p><strong>攻击成功，并运行虚拟网络控制台，实现对靶机的控制</strong></p>
+<p><strong>三、论述题（共3个题，任选两个做，每题6分,共12分）</strong></p>
+<p> <em><strong>1、论述网络攻击的目标是什么？黑客攻击步骤及各步骤所采用方法。（6分）</strong></em></p>
+<p>网络攻击的主要目标是网络服务器。</p>
+<p>步骤：隐藏攻击源、信息搜集、掌握系统控制权、实施攻击、安装后门、清除攻击痕迹。</p>
+<p>方法：探测攻击、网络监听、解码类攻击、未授权访问尝试、缓冲区溢出、伪装攻击、电子欺骗攻击、WWW攻击、拒绝服务和分布式拒绝服务攻击、病毒攻击。</p>
+<p> <em><strong>2、简述SQL注入的实现过程及SQL注入的检测与防范方法。（6分）</strong></em></p>
+<p>本质：SQL注入攻击就是攻击者把SQL命令插入到Web表单的输入域或页面请求的查询字符串，由于在服务器端未经过严格的有效性验证，而欺骗服务器执行恶意的SQL命令。</p>
+<p>实现过程：1、寻找SQL注入点；2、获取信息；3、实施控制。</p>
+<p>防范：主要从接收的客户端数据进行有效性验证入手。</p>
+<p>（1） 过滤特殊字符以及空格。</p>
+<p>（2） 过滤关键字，如and、select、update、insert、delete等。</p>
+<p>（3） 禁止外部提交表单，提交表单时最好使用POST方式。</p>
+<p>（4） 屏蔽出错信息。</p>
+<p>（5） 尽量使用复杂和难以猜解的表明和字段名，不要与用户登录界面里面的各种元素名相似。</p>
+<p>（6） 使用MD5加密数据库密码等敏感信息字段，即密文=md5（明文）。</p>
+<p><em><strong>3、简述跨站脚本攻击的实现过程。（6分）</strong></em></p>
+<p>（1）攻击者搜集感兴趣的目标站点。这些目标站点必须是合法用户正常登录，并且攻击者可以通过Cookies以及会话Session追踪合法用户的行为。</p>
+<p>（2）攻击者在站点上搜索带有XSS漏洞的页面。</p>
+<p>（3）诱惑其他用户点击连接。攻击者创建一个链接指向第二部中确定的页面，将该链接写入Email或某个正常网站的页面，利用社会工程学等方法，诱惑所有的目标用户点击。</p>
+<p>（4）在创建的链接中嵌入了恶意代码，可以将受到攻击主机的Cookies传递给攻击者。</p>
+<p>（5）攻击者获取被攻击用户Cookie的备份。</p>
+<p>（6）攻击者利用Cookie文件获取被攻击用户的信息，以被攻击用户的身份登录站点。</p>
+<p><strong>四、发挥题（共2题，每题6分，共12分）（此题要求对关键实验步骤截图并予以说明）</strong></p>
+<p><em><strong>1、根据网络安全课程中各类网络攻击方式的学习，试论述在以后的学习工作中如何维护自己计算机的网络安全？（6分）</strong></em></p>
+<p>（1）采用强力的密码。一个足够强大的密码可以让暴力破解成为不可能实现的情况。相反的，如果密码强度不够，几乎可以肯定会让你的系统受到损害；</p>
+<p>（2）确保核心的安全。在自己离开的时间，务必确保无线路由器或连接到无线网络上正在使用的笔记本电脑上运行了有效的防火墙；</p>
+<p>（3）浏览健康安全的网站，避免木马和病毒肆机而入</p>
+<p>（4）加强网络安全意识，辨别伪装真假。</p>
+<p>（5）在个人电脑中，对重要的材料进行网络加密，防止泄露。</p>
+<p>（6）安装知名杀毒软件，比如360安全卫士等等，定期对电脑进行木马查杀。</p>
+<p>（7）在学习和生活中要绿色上网，健康上网，只要遵守上网规则，网络安全才有最切实的保障。</p>
+<p><strong>2、自己上网查找资料实现任意一个网络攻击实例。（6分）</strong></p>
+<p><strong>用medusa工具破解Linux的登录密码</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/FRz6YySxrBnm4HI.png" alt="image-20210707193542985"> </p>
+<p><strong>用vim新建字典文件passwd.txt</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/kqa6XjeUGmzDcrE.png" alt="image-20210707193556085"> </p>
+<p><strong>-h指定主机号为192.168.0.100,-u指定用户名为root，-P指定字典，-M指定破解协议为ssh</strong></p>
+<p><img src="https://i.loli.net/2021/07/07/ftILOHr1vWc8aUx.png" alt="image-20210707193611868"> </p>
+<p><strong>可以看到最后密码破解成功，为owaspbwa，正确</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">YulongZ</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://zhengyulong.top/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/">http://zhengyulong.top/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://zhengyulong.top" target="_blank">YulongZのBlog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button button--animated"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/06/26/DSP%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/"><img class="next-cover" src="https://i.loli.net/2021/07/07/x8OP23thTaUpJbK.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">DSP期末复习</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://i.loli.net/2021/04/02/X3fLzoVn9gPiBMr.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">YulongZ</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zyl9737" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:zhengyulong5@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/973764862" target="_blank" title="QQ:973764862"><i class="fab fa-qq"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/" title="网络安全大作业"><img src="https://i.loli.net/2021/07/07/8EpRniA6ZtgMIz5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="网络安全大作业"/></a><div class="content"><a class="title" href="/2021/07/07/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%A4%A7%E4%BD%9C%E4%B8%9A/" title="网络安全大作业">网络安全大作业</a><time datetime="2021-07-07T10:16:54.000Z" title="发表于 2021-07-07 18:16:54">2021-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/06/26/DSP%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="DSP期末复习"><img src="https://i.loli.net/2021/07/07/x8OP23thTaUpJbK.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSP期末复习"/></a><div class="content"><a class="title" href="/2021/06/26/DSP%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="DSP期末复习">DSP期末复习</a><time datetime="2021-06-26T15:28:14.000Z" title="发表于 2021-06-26 23:28:14">2021-06-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/04/02/hello-world/" title="Hello World"><img src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/img/default.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2021/04/02/hello-world/" title="Hello World">Hello World</a><time datetime="2021-04-02T11:28:02.939Z" title="发表于 2021-04-02 19:28:02">2021-04-02</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By YulongZ</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css"></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="true"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="true"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300,"hOffset":20,"vOffset":-20},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/"});</script></body></html>
